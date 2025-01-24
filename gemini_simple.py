@@ -1,6 +1,5 @@
 
 import os
-from requests import get
 import google.generativeai as genai
 
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
@@ -24,6 +23,6 @@ chat_session = model.start_chat(
   ]
 )
 
-response = chat_session.send_message("What is the difference between a twister and a tornado?")
+response = chat_session.send_message("Provide a thorough history of the company 'Google'.")
 
 print(response.text)
