@@ -1,6 +1,4 @@
------
-
-## Resources
+# Resources
 
 **Videos**
 
@@ -16,7 +14,7 @@ none at this time
 
 [Prompt Engineering Guide](https://www.promptingguide.ai/)
 
-[Gemini Reference Sheet]https://www.promptingguide.ai/models/gemini)
+[Gemini Reference Sheet](https://www.promptingguide.ai/models/gemini)
 
 [Text Generation](https://ai.google.dev/gemini-api/docs/text-generation?lang=python)
 
@@ -24,7 +22,7 @@ none at this time
 
 -----
 
-## API
+# API
 
 > **GENERATE KEYS**
 > 
@@ -33,4 +31,4 @@ none at this time
 
 -----
 
-## Prompt Schema
+# Prompt Schema
