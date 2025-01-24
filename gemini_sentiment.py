@@ -13,9 +13,9 @@ generation_config = {
 }
 
 model = genai.GenerativeModel(
-  model_name="gemini-1.5-pro",
+  model_name="gemini-2.0-flash-exp",
   generation_config=generation_config,
-  system_instruction="Skew slightly towards NEGATIVE sentiment.",
+  system_instruction="Skew towards an empathetic feeling for the statement.",
 )
 
 chat_session = model.start_chat(
@@ -23,7 +23,7 @@ chat_session = model.start_chat(
     {
       "role": "user",
       "parts": [
-        "Analyze the sentiment of the following Tweets and classify them as POSITIVE, NEGATIVE, or NEUTRAL. \"It's so beautiful today!\"",
+        "Analyze the sentiment of the following statements and classify them as POSITIVE, NEGATIVE, or NEUTRAL. Provide an explanation for the classification. \"There are ants everywhere.\"",
       ],
     },
     {
@@ -35,7 +35,7 @@ chat_session = model.start_chat(
     {
       "role": "user",
       "parts": [
-        "\"It's so cold today I can't feel my feet...\"",
+        "\"I cannot believe the water is warm.\"",
       ],
     },
     {
@@ -47,7 +47,7 @@ chat_session = model.start_chat(
     {
       "role": "user",
       "parts": [
-        "\"The weather today is perfectly adequate.\"",
+        "\"I want to go home.\"",
       ],
     },
     {
@@ -59,6 +59,6 @@ chat_session = model.start_chat(
   ]
 )
 
-response = chat_session.send_message("I can't believe this weather.")
+response = chat_session.send_message("There are birds in the sky, I need to get to my car.")
 
 print(response.text)
