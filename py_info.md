@@ -6,6 +6,8 @@ none at this time
 
 **Gemini AI**
 
+[Google AI Studio](https://aistudio.google.com/)
+
 [Gemini API Documentation](https://ai.google.dev/gemini-api/docs)
 
 [Google Cloud API Platform](https://console.cloud.google.com/apis/dashboard)
